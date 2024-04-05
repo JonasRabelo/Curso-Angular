@@ -1,0 +1,13 @@
+<img [src]="imagem" width="500px" height="300px">
+<button (click)="alterarImgem()">Alterar imagem</button>
+
+<hr>
+
+<button (click)="acao()">Clique aqui</button>
+<hr>
+<div class="quadrado" *ngIf="exibir"></div>
+
+<ul>
+<li *ngFor="let item of nomes; index as indice"> {{indice}} - {{item}}</li>
+
+</ul>

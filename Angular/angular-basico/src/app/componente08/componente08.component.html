@@ -1,0 +1,34 @@
+<form [formGroup]="produtoForm">
+    <!-- Id -->
+   <input type="number" formControlName="id" readonly class="form-control">
+    <!-- Nome -->
+   <input type="text" formControlName="nome" placeholder="Nome" class="form-control">
+    <!-- Valor -->
+   <input type="number" formControlName="valor" placeholder="Valor" class="form-control">
+
+    @if (btnCadastrar) {
+        <input type="button" value="Cadastrar" class="btn btn-primary" (click)="cadastrar()">
+    }@else {
+        <input type="button" value="Alterar"  class="btn btn-primary" (click)="alterar()">
+        <input type="button" value="Remover"  class="btn btn-primary" (click)="remover()">
+    }
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>valor</th>
+            <th>Selecionar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of produtos; let indice = index">
+            <td>{{p.id}}</td>
+            <td>{{p.nome}}</td>
+            <td>{{p.valor | currency : 'BRL' }}</td>
+            <td><button (click)="selecionarProduto(indice)" class="btn btn-primary">Selecionar</button></td>
+        </tr>
+    </tbody>
+</table>

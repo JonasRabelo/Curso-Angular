@@ -1,0 +1,21 @@
+<div><button (click)="mensagem()">Clique aqui</button>
+</div>
+<hr>
+<div [ngSwitch]="linguagem">
+    <p *ngSwitchCase="'HTML'">Linguagem de marcação.</p>
+    <p *ngSwitchCase="'CSS'">Linguagem de estilo.</p>
+    <p *ngSwitchCase="'JS'">Linguagem de programação.</p>
+    <p *ngSwitchDefault>Linguagem não encontrada.</p>
+</div>
+<hr>
+
+<p (click)="inverteColor()" [ngStyle]="{'color': condicao ? 'green' : 'red'}">Aprendendo a condição ngStyle</p>
+<hr>
+<ul>
+    <li *ngFor="let l of lista" [ngStyle]="{'color': l ==='Aprovado' ? 'green' : 'red'}">{{l}}</li>
+</ul>
+<hr>
+
+<ul>
+    <li *ngFor="let l of lista" [ngClass]=" l == 'Aprovado' ? 'fonteVerde' : 'fonteVermelha'">{{l}}</li>
+</ul>

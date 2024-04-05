@@ -1,0 +1,14 @@
+<p>{{nome}}</p>
+<p>{{cidade}}</p>
+
+<form action="">
+    <input type="text" name="nome" [(ngModel)]="nome" placeholder="nome">
+    <input type="text" name="cidade" [(ngModel)]="cidade" placeholder="cidade">
+</form>
+<hr>
+<p>{{formulario.value.nome}}</p>
+<p>{{formulario.value.cidade}}</p>
+<form [formGroup]="formulario">
+    <input type="text" formControlName="nome" placeholder="insira o nome">
+    <input type="text" formControlName="cidade" placeholder="insira a cidade">
+</form>

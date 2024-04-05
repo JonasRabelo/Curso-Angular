@@ -1,0 +1,94 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Galaxy S24",
+      "valor": 4899
+    },
+    {
+      "id": "2",
+      "nome": "iPhone 15",
+      "valor": 8500
+    },
+    {
+      "id": 4,
+      "nome": "Pendrive 256GB",
+      "valor": 148.9
+    },
+    {
+      "id": 5,
+      "nome": "Macbook 3",
+      "valor": 4989.99
+    },
+    {
+      "id": 6,
+      "nome": "",
+      "valor": null
+    },
+    {
+      "id": 6,
+      "nome": null,
+      "valor": null
+    },
+    {
+      "id": 7,
+      "nome": null,
+      "valor": null
+    },
+    {
+      "id": 8,
+      "nome": null,
+      "valor": null
+    },
+    {
+      "id": 9,
+      "nome": null,
+      "valor": null
+    },
+    {
+      "id": 10,
+      "nome": null,
+      "valor": null
+    },
+    {
+      "id": 11,
+      "nome": null,
+      "valor": null
+    },
+    {
+      "id": 12,
+      "nome": null,
+      "valor": null
+    },
+    {
+      "id": 13,
+      "nome": null,
+      "valor": null
+    },
+    {
+      "id": 14,
+      "nome": null,
+      "valor": null
+    },
+    {
+      "id": 15,
+      "nome": null,
+      "valor": null
+    },
+    {
+      "id": 16,
+      "nome": null,
+      "valor": null
+    },
+    {
+      "id": 17,
+      "nome": null,
+      "valor": null
+    },
+    {
+      "id": 18,
+      "nome": null,
+      "valor": null
+    }
+  ]
+}
