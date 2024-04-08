@@ -1,0 +1,43 @@
+<button mat-flat-button color="primary" (click)="sumClicksTotals()">Primary</button>
+
+<p *ngIf="visibleTotalClicks" >Cliques Totais: {{ clicksTotals }}</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Button 01</th>
+      <th>Button 02</th>
+      <th>Button 03</th>
+      <th>Button 04</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{button01}}</td>
+      <td>{{button02}}</td>
+      <td>{{button03}}</td>
+      <td>{{button04}}</td>
+    </tr>
+  </tbody>
+
+</table>
+<section>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <button mat-icon-button (click)="incrementButton01()" aria-label="Example icon button with a vertical three dot icon">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <button mat-icon-button (click)="incrementButton02()" color="primary" aria-label="Example icon button with a home icon">
+        <mat-icon>home</mat-icon>
+      </button>
+      <button mat-icon-button (click)="incrementButton03()" color="accent" aria-label="Example icon button with a menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <button mat-icon-button (click)="incrementButton04()" color="warn" aria-label="Example icon button with a heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <!-- <button mat-icon-button disabled aria-label="Example icon button with a open in new tab icon">
+        <mat-icon>open_in_new</mat-icon>
+      </button> -->
+    </div>
+  </div>
+</section>

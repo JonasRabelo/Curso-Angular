@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Pessoa } from '../model/Pessoa';
+import { Pessoa } from '../../model/Pessoa';
 import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-projetofinal',
